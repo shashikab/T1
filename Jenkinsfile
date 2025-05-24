@@ -10,7 +10,7 @@ pipeline {
         API_VERSION   = '1.0.7'
         GIT_REPO_SSH  = 'git@github.com:shashikab/CICDPOC.git'
         TARGET_BRANCH = 'dev'
-        OAS_FILE      = '/Users/shashika/.jenkins/workspace/InitializeProject/git-init/swagger.yaml'
+        OAS_FILE      = '/Users/shashika/.jenkins/workspace/Job_1_Init/git-init/swagger.yaml'
     }
 
     stages {
