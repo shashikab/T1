@@ -8,7 +8,7 @@ pipeline {
         APIM_PASSWORD = 'admin'
         API_NAME      = 'SwaggerPetstore'
         API_VERSION   = '1.0.7'
-        GIT_REPO_SSH  = 'git@github.com:shashikab/teamP.git'
+        GIT_REPO_SSH  = 'git@github.com:shashikab/CICDPOC.git'
         TARGET_BRANCH = 'dev'
         OAS_FILE      = '/Users/shashika/.jenkins/workspace/InitializeProject/git-init/swagger.yaml'
     }
@@ -72,7 +72,7 @@ pipeline {
 
                         # 7) Switch remote to HTTPS with embedded credentials and checkout branch
                         git remote set-url origin \
-                          "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/shashikab/teamP.git"
+                          "https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/shashikab/CICDPOC.git"
                         git fetch origin ${TARGET_BRANCH} || true
                         git checkout -B ${TARGET_BRANCH} origin/${TARGET_BRANCH}
 
