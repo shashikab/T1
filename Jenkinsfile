@@ -44,7 +44,6 @@ pipeline {
                     passwordVariable: 'GIT_PASSWORD'
                 )]) {
                     sh '''
-                       checkout scm
                         # 1) Fresh clone
                         rm -rf git-init
                         git clone "${GIT_REPO_SSH}" git-init
